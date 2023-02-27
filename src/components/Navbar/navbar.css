@@ -1,0 +1,151 @@
+nav{
+    padding: 10px 0px 0px 0px;
+    height: 10vh;
+}
+
+.nav_logo{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+}
+
+.nav_items a{
+    margin: 15px;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    display: none;
+    text-align: center;
+   
+}
+
+.nav_items span {
+    background-color: #fff;
+    padding: 10px 10rem;
+    border-radius: 10px;
+    color: #F472B6;
+    width: 100%;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.logo img{
+    width: 50px;
+}
+
+
+.porfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.porfile-text{
+    text-align:left;
+    color: #fff;
+}
+
+.porfile-text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav_items{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: #F472B6;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: -webkit-fill-available;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+    height: 100vh;
+}
+.nav_items.open{
+    transform: translateX(0) !important
+}
+
+.nav_items a{
+    display: flex;
+}
+
+.nav_toggle{
+    display: flex;
+    flex-direction: column;                
+    margin: 15px;
+    cursor: pointer;
+}
+.nav_toggle span{
+    width: 30px;
+    height: 4px;
+    background: #F472B6;
+    margin-bottom: 5px;
+    border-radius: 2px;             
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+}
+
+.nav_toggle {
+    z-index: 10000;
+}
+.nav_toggle.open > span{
+    transform: rotate(45deg) translate(0px, 0px);
+    margin-top: 10px;
+    margin-left: 200px;
+    background: #fff;
+}
+.nav_toggle.open > span:nth-child(2){
+    display: none;
+}
+.nav_toggle.open > span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px, 1px);
+    margin-top: 1px;
+    background: #fff;
+}
+
+/* @media (max-width: 767px) {
+    nav{
+        padding: 21px 21px 0 21px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .nav_items {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025) {
+    nav{
+        padding: 21px 21px 0 21px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .nav_items {
+        width: 50%;
+    }
+    .home-fondo {
+        justify-content: center;
+        align-items: center;
+    }
+} */
+

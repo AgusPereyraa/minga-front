@@ -1,0 +1,73 @@
+.contain{
+    width: 100%;
+    padding: px 10%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.home-contain{
+    display: flex;
+    gap: 8rem;
+    background: linear-gradient(153.39deg, #F9A8D4 -13.9%, #F472B6 58.69%);
+    border-radius: 6px;
+    align-items: center;
+    height: 25vh;
+    margin-top: 1rem; 
+}
+
+.home-contain h3{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.home-contain p{
+    width: 100%;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 95.19%;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.home-contain h6{
+    /* width: 50%; */
+    padding-top: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+
+.home-text{
+    width: 100%;
+    margin: 2rem;
+    text-align: center;
+}
+
+.poster2{
+    margin-top: -10px;
+    
+}
+.poster2 img{
+    height: 160px;
+    margin-top: -27px;
+}
+
+.poster1{
+    margin: -10px 0px 0px 30px;
+}
+.poster1 img{
+    height: 160px;
+}
