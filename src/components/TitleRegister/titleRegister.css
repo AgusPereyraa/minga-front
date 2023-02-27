@@ -1,0 +1,39 @@
+.titleRegister{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 136px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titleRegister h2{
+    width: 448px;
+    height: 39px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.05em;
+}
+
+.titleRegister p{
+    width: 384px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    margin-top: 1rem;
+}
+
+@media (max-width: 814px){
+    .titleRegister{
+        margin: 0;
+    }
+    .titleRegister h2{
+        width: auto;
+    }
+    .titleRegister p{
+        width: auto;
+    }
+}

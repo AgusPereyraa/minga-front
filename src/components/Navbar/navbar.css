@@ -121,31 +121,4 @@ nav{
     background: #fff;
 }
 
-/* @media (max-width: 767px) {
-    nav{
-        padding: 21px 21px 0 21px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-    .nav_items {
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1025) {
-    nav{
-        padding: 21px 21px 0 21px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-    .nav_items {
-        width: 50%;
-    }
-    .home-fondo {
-        justify-content: center;
-        align-items: center;
-    }
-} */
 
