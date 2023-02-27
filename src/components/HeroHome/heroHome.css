@@ -19,12 +19,20 @@
 
 .home-contain h3{
     width: 100%;
+<<<<<<< HEAD
     font-size: 24px;
+=======
+    font-size: 20px;
+>>>>>>> f711b3696e37e87aae3cff7fb99ad691b28055de
     display: flex;
     align-items: center;
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
     font-weight: 500;
+=======
+    font-weight: 600;
+>>>>>>> f711b3696e37e87aae3cff7fb99ad691b28055de
 }
 
 .home-contain p{
@@ -32,7 +40,11 @@
     padding-top: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+    font-size: 16px;
+>>>>>>> f711b3696e37e87aae3cff7fb99ad691b28055de
     line-height: 95.19%;
     display: flex;
     align-items: center;
@@ -40,10 +52,18 @@
 }
 
 .home-contain h6{
+<<<<<<< HEAD
     padding-top: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
+=======
+    /* width: 50%; */
+    padding-top: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+>>>>>>> f711b3696e37e87aae3cff7fb99ad691b28055de
     color: #FFFFFF;
     text-align: justify;
 }
