@@ -10,39 +10,43 @@ import google from '../../images/google.png'
 import axios from 'axios'
 
 export default function FormRegister() {
+  let dataForm = useRef()
 
-  let name = useRef()
-  let mail = useRef()
-  let password = useRef()
-  let confirm_p = useRef()
+  async function handleSubmit(e){
+      e.preventDefault()
 
-  async function handleSubmit(e) {
-    e.preventDefault()
-    let data = {
-      [name.current.name]: name.current.value,
-      [mail.current.name]: mail.current.value,
-      [password.current.name]: password.current.value,
-      [confirm_p.current.name]: confirm_p.current.value
-    }
-    console.log(data)
-    let url = 'http://localhost:3030/users'
+      let formInputs = []
 
-    if (password.current.value === confirm_p.current.value) {
-      try {
-        await axios.post(
-          url, data
-        )
-      } catch (error) {
-        console.log(error)
-        console.log('Error')
+      Object.values(dataForm.current).forEach(e => {
+          if(e.name){
+              formInputs.push(e)
+          }
+      })
+      formInputs.pop()
+      let data = {
+          [formInputs[0].name]: formInputs[0].value,
+          [formInputs[1].name]: formInputs[1].value,
+          [formInputs[2].name]: formInputs[2].value,
       }
-      e.target.reset()
-    } else {
-      alert("Passwords do not match")
-    }
+
+      let url = 'http://localhost:3030/users'
+      if(formInputs[2].value === formInputs[3].value){
+          try{
+              await axios.post(url,data)
+              alert("Registration Success")
+              dataForm.current.reset()
+            }catch(error){
+              console.log(error)
+              console.log("Error")
+          }
+
+      }else{
+          alert("Password doesnt match")
+      }
+
   }
   return (
-    <form className='form' onSubmit={handleSubmit}>
+    <form className='form' onSubmit={handleSubmit} ref={dataForm}>
       <FieldsetRegister legendText='Name' inputType='text' inputName='name' inputId='name' srcImg={profile} altImg='person' />
       <FieldsetRegister legendText='Email' inputType='email' inputName='mail' inputId='mail' srcImg={email} altImg='@' />
       <FieldsetRegister id='field-password' legendText='Password' inputType='password' inputName='password' inputId='password' srcImg={lock} altImg='lock' />
