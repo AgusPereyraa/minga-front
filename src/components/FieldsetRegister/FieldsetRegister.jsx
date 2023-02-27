@@ -5,7 +5,7 @@ import InputRegister from '../InputRegister/InputRegister'
 import Image from '../Image/Image'
 
 
-export default function FieldsetRegister({id, legendText, inputType,inputName, inputId, srcImg, altImg}) {
+export default function FieldsetRegister({id, legendText, inputType,inputName, inputId, srcImg, altImg, ref}) {
   return (
     <fieldset id={id}>
         <LegendRegister text={legendText} />
